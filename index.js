@@ -18,7 +18,7 @@ app.use(cors())
 
 const connetToDb = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URI);
+        await mongoose.connect("mongodb + srv://social-mern:GH1ZcsFuandwDPrz@cluster0.2bheklb.mongodb.net/service-review?retryWrites=true&w=majority");
         console.log("coonented to db")
     } catch (error) {
         console.log(error);
